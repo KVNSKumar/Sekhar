@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Get Accounts">
+    <template for:each={actdata} for:item="each">
+
+        <lightning-layout key={each.Id} vertical-align="center"> 
+            <li>
+                {each.Id}  ||   {each.Name}  ||  {each.AccountNumber}
+            </li>
+        </lightning-layout>
+    </template>
+    
+    </lightning-card>
+</template>
